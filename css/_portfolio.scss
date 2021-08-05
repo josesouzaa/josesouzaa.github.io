@@ -1,0 +1,66 @@
+#portfolio {
+  background: $black;
+  padding: 7rem 0;
+  color: $white;
+  .container {
+    h1 {
+      @include h1($white);
+    }
+  }
+}
+
+.container-port {
+  column-count: 3;
+  column-gap: 2rem;
+  @include d(m) {
+    column-count: 2;
+  }
+  @include d(s) {
+    column-count: 1;
+  }
+  figure {
+    margin: 0;
+    display: flex;
+    margin-bottom: 2rem;
+    break-inside: avoid;
+    position: relative;
+    .img-chamada {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity 0.3;
+      > * {
+        transform: translateY(7rem);
+        transition: transform 0.3s;
+      }
+      h2 {
+        display: block;
+        font-size: 2rem;
+      }
+      p {
+        display: block;
+        font-size: 1.4rem;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      &:hover > * {
+        transform: translateY(0rem);
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+}

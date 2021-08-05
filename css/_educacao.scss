@@ -1,0 +1,59 @@
+#educacao {
+  padding: 7rem 0;
+  background: $black;
+  color: $white;
+  h1 {
+    @include h1($white);
+  }
+  .cursos {
+    display: grid;
+    grid-template-columns: minmax(29rem, 40rem) minmax(29rem, 40rem);
+    gap: 4rem;
+    justify-content: center;
+    @include d(m) {
+      grid-template-columns: minmax(29rem, 40rem);
+    }
+    @include d(s) {
+      grid-template-columns: minmax(27rem, 40rem);
+    }
+  }
+  .curso {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    .flex {
+      gap: 1rem;
+    }
+    img {
+      width: 10rem;
+      height: 10rem;
+      @include d(s) {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
+    span {
+      font-size: 1.2rem;
+      background: $blue-m;
+      padding: 0.3rem;
+      border-radius: 0.5rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: 1rem 0 0 0;
+      line-height: 2.3rem;
+      @include d(s) {
+        font-size: 1.4rem;
+      }
+    }
+    p.instituicao {
+      color: $blue-m;
+      font-weight: 500;
+    }
+  }
+}

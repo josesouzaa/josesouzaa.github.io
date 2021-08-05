@@ -1,0 +1,64 @@
+#experiencia {
+  padding: 7rem 0;
+  h1 {
+    @include h1();
+  }
+  .jobs {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .job {
+    max-width: 60rem;
+    .flex {
+      gap: 1rem;
+    }
+    img {
+      width: 10rem;
+      height: 10rem;
+      margin-bottom: 1rem;
+      @include d(s) {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      @include d(s) {
+        margin-top: 1rem;
+      }
+    }
+    span {
+      color: $white;
+      font-size: 1.2rem;
+      background: $blue-m;
+      padding: 0.3rem;
+      border-radius: 0.5rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: 1rem 0 0 0;
+      line-height: 2.3rem;
+    }
+    p.empresa {
+      color: $blue-m;
+      font-weight: 500;
+    }
+  }
+}
+
+.job.virta {
+  @include d(s) {
+    text-align: left;
+    > .flex {
+      justify-content: flex-start;
+      > .job-text {
+        order: 1;
+      }
+    }
+  }
+}

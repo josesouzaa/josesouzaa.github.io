@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%; /* 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $white;
+  color: $black;
+  padding-top: 5.4rem;
+}
+
+.container {
+  width: Min(90vw, 114rem);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.end {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.end2 {
+  justify-content: flex-end;
+}

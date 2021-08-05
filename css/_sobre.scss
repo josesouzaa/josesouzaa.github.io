@@ -1,0 +1,80 @@
+#sobre .sobre-content {
+  padding: 7rem 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  justify-items: center;
+  align-items: center;
+  @include d(m) {
+    display: block;
+  }
+  @include d(s) {
+    display: block;
+  }
+  > img {
+    @include d(m) {
+      display: none;
+    }
+    @include d(s) {
+      display: none;
+    }
+  }
+  img {
+    clip-path: circle();
+    max-width: 80%;
+  }
+  .sobre-info {
+    .sobre-text {
+      max-width: 90%;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      @include d(m) {
+        max-width: 100%;
+      }
+      @include d(s) {
+        max-width: 100%;
+      }
+    }
+    .sobre-links {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      @include d(s) {
+        flex-direction: column;
+      }
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+      }
+      .redes a {
+        display: inline-block;
+      }
+      .sobre-contato {
+        p {
+          font-size: 1.4rem;
+          font-weight: 300;
+          padding-bottom: 2.5rem;
+        }
+        a {
+          @include btn(1.4, $black, 600);
+          padding: 0.3rem 3rem;
+          transition: 0.3s;
+          &:hover {
+            color: $blue-m;
+            border-color: $blue-m;
+          }
+        }
+      }
+      .divisor {
+        content: "";
+        background: $black;
+        width: 0.1rem;
+        height: auto;
+        @include d(s) {
+          height: 0.1rem;
+          width: 70%;
+        }
+      }
+    }
+  }
+}

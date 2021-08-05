@@ -1,0 +1,92 @@
+[
+  {
+    "index": 0,
+    "titulo": "Animais Fantásticos",
+    "descricao": "Site projeto do curso de Front-End da Origamid.",
+    "tecnologias": "HTML, CSS e JavaScipt.",
+    "preview": "port/animais.jpg",
+    "previewgif": "port/animais.gif",
+    "repositorio": "https://github.com/josesouzaa/animais-fantasticos",
+    "deployments": "https://josesouzaa.github.io/animais-fantasticos/"
+  },
+  {
+    "index": 1,
+    "titulo": "dev.finance$",
+    "descricao": "Aplicação projeto da Maratona Discover da Rocketseat",
+    "tecnologias": "HTML, CSS e JavaScipt.",
+    "preview": "port/devfinances.jpg",
+    "previewgif": "port/devfinances.gif",
+    "repositorio": "https://github.com/josesouzaa/dev-finances",
+    "deployments": "https://josesouzaa.github.io/dev-finances/"
+  },
+  {
+    "index": 2,
+    "titulo": "Dev Diamante",
+    "descricao": "Projeto pessoal de estudo.",
+    "tecnologias": "HTML, CSS, SASS e JavaScipt.",
+    "preview": "port/devdiamante.jpg",
+    "previewgif": "port/devdiamante.gif",
+    "repositorio": "https://github.com/josesouzaa/dev-diamante",
+    "deployments": "https://dev-diamante-hsr5mfksq-josesouzaa.vercel.app/"
+  },
+  {
+    "index": 3,
+    "titulo": "Calculadora de GET",
+    "descricao": "Projeto pessoal de estudo.",
+    "tecnologias": "HTML, CSS, SASS e JavaScipt.",
+    "preview": "port/getcalculator.jpg",
+    "previewgif": "port/getcalculator.gif",
+    "repositorio": "https://github.com/josesouzaa/get-calculadora",
+    "deployments": "https://josesouzaa.github.io/get-calculadora/"
+  },
+  {
+    "index": 4,
+    "titulo": "Portfólio Pessoal",
+    "descricao": "Portifólio pessoal.",
+    "tecnologias": "HTML, CSS, SASS e JavaScipt.",
+    "preview": "port/jose.jpg",
+    "previewgif": "Link do preview gif",
+    "repositorio": "Link",
+    "deployments": "Link do deployment"
+  },
+  {
+    "index": 5,
+    "titulo": "Caravan",
+    "descricao": "Site projeto do curso de Front-End da Origamid.",
+    "tecnologias": "HTML, CSS, Bootstrap e JavaScipt.",
+    "preview": "port/caravan.jpg",
+    "previewgif": "port/caravan.gif",
+    "repositorio": "https://github.com/josesouzaa/caravan",
+    "deployments": "https://josesouzaa.github.io/caravan/"
+  },
+  {
+    "index": 6,
+    "titulo": "Le Scone",
+    "descricao": "Site projeto do curso de Front-End da Origamid.",
+    "tecnologias": "HTML, CSS e SASS.",
+    "preview": "port/lescone.jpg",
+    "previewgif": "port/lescone.gif",
+    "repositorio": "https://github.com/josesouzaa/le-scone-sass",
+    "deployments": "https://josesouzaa.github.io/le-scone-sass/"
+  },
+  {
+    "index": 7,
+    "titulo": "Wild Beast",
+    "descricao": "Site projeto do curso de Front-End da Origamid.",
+    "tecnologias": "HTML e CSS.",
+    "preview": "port/wildbeast.jpg",
+    "previewgif": "port/wildbeast.gif",
+    "repositorio": "https://github.com/josesouzaa/wildbeast",
+    "deployments": "https://josesouzaa.github.io/wildbeast/"
+  },
+  {
+    "index": 8,
+    "titulo": "BikCraft",
+    "descricao": "Site projeto do curso de Front-End da Origamid.",
+    "tecnologias": "HTML, CSS e SASS.",
+    "preview": "port/bikcraft.jpg",
+    "previewgif": "port/bikcraft.gif",
+    "repositorio": "https://github.com/josesouzaa/bikcraft-sass",
+    "deployments": "https://josesouzaa.github.io/bikcraft-sass/"
+  }
+]

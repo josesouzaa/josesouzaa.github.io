@@ -1,0 +1,38 @@
+$font: "Poppins", sans-serif;
+
+$black: #021e34;
+$blue-h: #184271;
+$blue-m: #3884b2;
+$blue-l: #9cc1d1;
+$blue-xl: #d1dee4;
+$white: #f9f9f9;
+
+@mixin btn($size, $color: $black, $peso: bold) {
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: $color;
+  border: solid 2px $color;
+  font-weight: $peso;
+  font-size: $size + rem;
+}
+
+@mixin h1($color: $black) {
+  color: $color;
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+@mixin d($size: m) {
+  @if $size == m {
+    @media screen and (min-width: 480px) and (max-width: 760px) {
+      @content;
+    }
+  } @else if $size == s {
+    @media screen and (max-width: 479px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+#intro {
+  background: url(../img/code-bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 7rem 0;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+  }
+}
+
+#intro .intro-content {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  z-index: 10;
+  p {
+    font-size: 2.4rem;
+  }
+  h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-align: center;
+    @include d(s) {
+      font-size: 2.8rem;
+    }
+  }
+  a {
+    margin-top: 1.5rem;
+    @include btn(1.6, $white, 500);
+    background: $blue-h;
+    border: none;
+    transition: 0.3s;
+    &:hover {
+      background: $blue-m;
+    }
+  }
+}
