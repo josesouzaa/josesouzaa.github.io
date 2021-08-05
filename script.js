@@ -198,7 +198,7 @@ ativarAoScroll.init();
     <ul>
       <li><span>Descrição:</span>${itensPortfolio[index].descricao}</li>
       <li><span>Tecnologias:</span>${itensPortfolio[index].tecnologias}</li>
-      <li><span>Repositório:</span><a href="${itensPortfolio[index].repositorio}">Clique para ver o repositório.</a></li>
+      <li><span>Repositório:</span><a href="${itensPortfolio[index].repositorio}" target="_blank">Clique para ver o repositório.</a></li>
       <li><span>Deploy:</span><a href="${itensPortfolio[index].deployments}" target="_blank">Clique para visualizar a página.</a></li>
     </ul>
     <i class="material-icons">close</i>`;
