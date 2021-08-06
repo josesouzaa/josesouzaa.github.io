@@ -17,21 +17,36 @@
   justify-content: center;
   align-items: center;
   .modal-content {
-    width: Min(90rem, 90vw);
+    width: Min(120rem, 90vw);
     background: $white;
     padding: 2rem;
     border-radius: 0.4rem;
     position: relative;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "h1 h1" "img desc";
+    @include d(m) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "h1" "img" "desc";
+    }
+    @include d(s) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "h1" "img" "desc";
+    }
     img {
       width: 100%;
+      grid-area: img;
     }
     h1 {
+      grid-area: h1;
       @include h1();
       font-size: 2.5rem;
       margin-bottom: 0;
       padding: 1rem 0;
     }
     ul {
+      grid-area: desc;
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -64,6 +79,9 @@
       clip-path: circle();
       cursor: pointer;
       transition: background 0.3s;
+      @include d(s) {
+        padding: 0.5rem;
+      }
       &:hover {
         background: $blue-m;
       }

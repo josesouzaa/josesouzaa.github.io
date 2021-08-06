@@ -1136,18 +1136,47 @@ footer a.link-footer {
 }
 
 #modal.show .modal-content {
-  width: Min(90rem, 90vw);
+  width: Min(120rem, 90vw);
   background: #f9f9f9;
   padding: 2rem;
   border-radius: 0.4rem;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "h1 h1" "img desc";
+}
+
+@media screen and (min-width: 480px) and (max-width: 760px) {
+  #modal.show .modal-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "h1" "img" "desc";
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #modal.show .modal-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "h1" "img" "desc";
+  }
 }
 
 #modal.show .modal-content img {
   width: 100%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
 }
 
 #modal.show .modal-content h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: h1;
   color: #021e34;
   font-size: 3.6rem;
   font-weight: 600;
@@ -1159,6 +1188,9 @@ footer a.link-footer {
 }
 
 #modal.show .modal-content ul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: desc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1204,6 +1236,12 @@ footer a.link-footer {
   cursor: pointer;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
+}
+
+@media screen and (max-width: 479px) {
+  #modal.show .modal-content i {
+    padding: 0.5rem;
+  }
 }
 
 #modal.show .modal-content i:hover {

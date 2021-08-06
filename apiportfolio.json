@@ -45,9 +45,9 @@
     "descricao": "Portifólio pessoal.",
     "tecnologias": "HTML, CSS, SASS e JavaScipt.",
     "preview": "port/jose.jpg",
-    "previewgif": "Link do preview gif",
-    "repositorio": "Link",
-    "deployments": "Link do deployment"
+    "previewgif": "port/jose.gif",
+    "repositorio": "https://github.com/josesouzaa/josesouzaa.github.io",
+    "deployments": "https://josesouzaa.github.io/"
   },
   {
     "index": 5,
