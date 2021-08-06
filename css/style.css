@@ -170,6 +170,11 @@ body {
           justify-content: flex-end;
 }
 
+.iten-icon {
+  width: 5rem;
+  height: auto;
+}
+
 #menu {
   width: 100%;
   background: #f9f9f9;
