@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "index": 0,
     "titulo": "Animais Fantásticos",
@@ -27,7 +27,7 @@
     "preview": "port/devdiamante.jpg",
     "previewgif": "port/devdiamante.gif",
     "repositorio": "https://github.com/josesouzaa/dev-diamante",
-    "deployments": "https://dev-diamante-hsr5mfksq-josesouzaa.vercel.app/"
+    "deployments": "https://josesouzaa.github.io/dev-diamante/"
   },
   {
     "index": 3,
